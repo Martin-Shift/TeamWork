@@ -6,3 +6,4 @@ enum Keys {
 int getKey();
 void SetCursorPosition(short x , short y);
 bool menu(int min, int max, int& y, int& prevY);
+void rainbow(std::string line, int start);
