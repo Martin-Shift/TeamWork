@@ -4,6 +4,23 @@
 #include <chrono>
 #include "Colors.h"
 #include "Console.h"
+
+void rainbow(std::string line, int start)
+{
+	for (int i{}; i < 15; i++)
+	{
+		SetCursorPosition(0, start);
+		for (int j{}; j < line.size(); j++)
+		{
+			std::cout << line[j];
+			SetColor(rand() % WHITE + 1, BLACK);
+			std::this_thread::sleep_for(std::chrono::milliseconds(40));
+		}
+
+	}
+	SetColor(WHITE, BLACK);
+}
+
 int main()
 {
     std::cout << "Hello World!\n";
@@ -14,7 +31,7 @@ int main()
     for (int i{}; i < Hello.size(); i++)
     {
         std::cout << Hello[i];
-        std::this_thread::sleep_for(std::chrono::milliseconds(500));
+        std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }//andriy
     ResetColor();
     rainbow(Hello, 2);

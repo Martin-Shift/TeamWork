@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 enum Keys {
 	ESC = 27, ARROW_START = 224, ENTER = 13,
 	UP_ARROW = 72, DOWN_ARROW = 80, LEFT_ARROW = 75, RIGHT_ARROW = 77, W = 87, S = 83,SPACE = 32
