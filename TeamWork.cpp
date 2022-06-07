@@ -11,7 +11,7 @@ int main()
     for (int i{}; i < Hello.size(); i++)
     {
         std::cout << Hello[i];
-        std::this_thread::sleep_for(std::chrono::milliseconds(50));
+        std::this_thread::sleep_for(std::chrono::milliseconds(500));
     }
 }
 
