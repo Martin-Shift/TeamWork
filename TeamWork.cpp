@@ -44,6 +44,7 @@ int main()
 		{
 			SetColor(rand()%16, BLACK);
 			std::cout << "* ";
+			std::this_thread::sleep_for(std::chrono::milliseconds(50));
 		}
 		std::cout << "\n";
 	}
