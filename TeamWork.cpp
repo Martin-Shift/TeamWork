@@ -5,6 +5,7 @@
 #include "Colors.h"
 #include "Console.h"
 
+
 void rainbow(std::string line, int start)
 {
 	for (int i{}; i < 15; i++)
@@ -35,6 +36,16 @@ int main()
     }//andriy
     ResetColor();
     rainbow(Hello, 2);
-}
 
+	SetCursorPosition(0, 5);
+	for (int i = 0; i < 5; i++)
+	{
+		for (int j = 0; j < 5; j++)
+		{
+			SetColor(rand()%16, BLACK);
+			std::cout << "* ";
+		}
+		std::cout << "\n";
+	}
+}
 
